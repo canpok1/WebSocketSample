@@ -1,0 +1,20 @@
+apply plugin: 'war'
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot', version: '1.2.5.RELEASE'
+}
+
+
+// 文字コード設定
+def defaultEncoding = 'UTF-8'
+[compileJava, compileTestJava, javadoc]*.options*.encoding = defaultEncoding
+
+
+// Gradleラッパーのインストールタスク
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.6'
+}
+
