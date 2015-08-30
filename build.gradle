@@ -30,4 +30,4 @@ task wrapper(type: Wrapper) {
 
 jar.baseName = 'websocket-sample'
 
-task stage(dependsOn : ['clean', 'build'])
+task stage(dependsOn : ['build'])
