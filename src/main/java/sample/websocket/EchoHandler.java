@@ -11,7 +11,7 @@ import org.springframework.web.socket.TextMessage;
 import org.springframework.web.socket.WebSocketSession;
 import org.springframework.web.socket.handler.TextWebSocketHandler;
 
-@Component
+@Service
 public class EchoHandler extends TextWebSocketHandler {
 
 	private Map<String, WebSocketSession> sessionPool = new ConcurrentHashMap<>();
