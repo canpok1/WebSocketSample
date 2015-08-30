@@ -1,0 +1,11 @@
+language: java
+jdk:
+- oraclejdk7
+- openjdk6
+deploy:
+  provider: heroku
+  api_key:
+    secure: i52zkI0okhfRlYfuuTpQeRuuNyd85slEWFHDtiUaAcK6P9TZJd1j4wK716WJfHR/UhxzxBbKFeRW75Tku7a0UeLj+rC32LF1SWNXQiXSIM9Q7KBiEPRtm5fH/UWJnPvzJpTW6XuhlMeAbX/ugCEgtUNjTmLgjgyyvp1bFuWbqRMaFAh6RXYhM5B0md4rOW04nM83kzVKMcvWZxwKebZfk4zO6psfgfjbm3/WPuwWxZe1q9p/8fI5YO9GM2US8tbauRB7qrAxr4iHnzS0PsN8X8gDrb3Jl6VPVOeenclrsyiRNTJgB4GDabdJ+W6oBkDOkB0i0DncrkmCxu24HpEPfUapcZiCyEqTK4SvpPEMiSN4OPwG4lMvzIdS/oYB5b4B+bHsZIVQrl85jPzUVBUFVSP0XCJ/195yP3FWUMwsDVMUQI8xNfq4sBhfVurbu/g05u5D/OHraW6Ik5MlmS+x2UwLDDu7qjcD9WQXBYrV43VZiUo7kq5APVb9bbQagoVjvOAOLrBiVLLmM5H/pI+iVjA9Pdu0islskQiuUVFGn37UAZvKTxPx/EGmUZmD+Vz8e0eQdfVghorc/bezxpVaXuaa+LjBjUQLYqQwqifhFHDxtdI7GUFadWCFyI7tBgLDuRKX69WuBjSvyg/EQd3WB7+DoSrexhJA3HivacNcQpY=
+  app: websocket-sample-001
+  on:
+    repo: canpok1/WebSocketSample
